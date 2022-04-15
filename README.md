@@ -28,8 +28,8 @@ Output: [1]
 
 3. Last step is to take the k elements from the TreeMap, since by default TreeMap sorts the keys in ascending order, we can use the lastEntry() method on reverse map.
    
-**Don't forget to remove the value from the reverse map after considering it in the top k frequent elements output array.
-And to get the key and value from a Map.Entry, you can use getKey() and getValue() methods respectively.    **
+#### Don't forget to remove the value from the reverse map after considering it in the top k frequent elements output array.   
+#### And to get the key and value from a Map.Entry, you can use getKey() and getValue() methods respectively.
 
 # Implementation 
 ```java
