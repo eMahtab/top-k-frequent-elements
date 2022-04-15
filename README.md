@@ -21,6 +21,13 @@ Output: [1]
 4. You can return the answer in any order.
 
 
+### Naive approach :
+1. First create a map (Map<Integer,Integer>) for frequency (how many times individual numbers appear in the input aray).
+
+2. Second step, reverse the map, so the frequency becomes the key and the value will be List<Integer> that appear that many times. (Use a TreeMap<Integer, List<Integer>>). Since we are intersted in the Top K elements using a TreeMap in second step, will give us the access to numbers with most frequency.    
+
+3. Last step is to take the k elements from the TReeMap, since by default TreeMap sorts the keys in ascending order, we can use the lastEntry() method on reverse map.
+    
 
 # Implementation 
 ```java
