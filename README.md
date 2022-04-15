@@ -26,8 +26,10 @@ Output: [1]
 
 2. Second step, reverse the map, so the frequency becomes the key and the value will be List<Integer> that appear that many times. (Use a TreeMap<Integer, List<Integer>>). Since we are intersted in the Top K elements using a TreeMap in second step, will give us the access to numbers with most frequency.    
 
-3. Last step is to take the k elements from the TReeMap, since by default TreeMap sorts the keys in ascending order, we can use the lastEntry() method on reverse map.
-    
+3. Last step is to take the k elements from the TreeMap, since by default TreeMap sorts the keys in ascending order, we can use the lastEntry() method on reverse map.
+   
+**Don't forget to remove the value from the reverse map after considering it in the top k frequent elements output array.
+And to get the key and value from a Map.Entry, you can use getKey() and getValue() methods respectively.    **
 
 # Implementation 
 ```java
